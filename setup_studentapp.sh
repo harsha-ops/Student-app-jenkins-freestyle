@@ -40,6 +40,8 @@ sudo systemctl restart tomcat
 
 echo 1 | sudo alternatives --config java
 
+java -version
+
 #Building the application using Maven
 
 sudo su - devops -c "cd /opt/student-app/ && mvn clean package"
@@ -47,6 +49,8 @@ sudo su - devops -c "cd /opt/student-app/ && mvn clean package"
 #Setting the java path to java1.11 as per the tomcat
 
 echo 2 | sudo alternatives --config java
+
+java -version
 
 #Deploying the build artifact to the tomcat webapps folder
 
