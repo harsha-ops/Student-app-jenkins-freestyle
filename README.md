@@ -1,11 +1,11 @@
 Deploying the StudentApp using Jenkins free style job:
-Job1: -
-	Create a job with the name “setup_tools”
-	Restrict the job on Slave node
-	Integrate the with GitHub repo
-	Add the Build Steps “Execute Shell”
-	sudo su -c "chmod +x install_tools_studentapp.sh"
-	sudo su -c "./install_tools_studentapp.sh" 
+Job1
+Create a job with the name “setup_tools”
+Restrict the job on Slave node
+Integrate the with GitHub repo
+Add the Build Steps “Execute Shell”
+sudo su -c "chmod +x install_tools_studentapp.sh"
+sudo su -c "./install_tools_studentapp.sh" 
 
 Test the Tools: -
 	 http://52.51.140.10/
