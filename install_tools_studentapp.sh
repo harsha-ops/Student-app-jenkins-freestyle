@@ -59,7 +59,7 @@ sudo su - devops -c "sudo ln -s /opt/maven/bin/mvn /usr/local/bin/mvn"
 # Tomcat Installation
 
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.96/bin/apache-tomcat-9.0.96.tar.gz
-sudo tar -xvzf aapache-tomcat-9.0.96.tar.gz
+sudo tar -xvzf apache-tomcat-9.0.96.tar.gz
 sudo rm -rf apache-tomcat-9.0.96.tar.gz
 sudo mv apache-tomcat-9.0.96 appserver
 
@@ -103,8 +103,8 @@ systemctl enable nginx
 # mariadb setup
 
 sudo yum install mariadb*
-systemctl start mariadb
-systemctl enable mariadb
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
 
 #cloning the source code
 
