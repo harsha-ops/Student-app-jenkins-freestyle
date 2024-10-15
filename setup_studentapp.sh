@@ -16,7 +16,7 @@ git pull origin main
 
 #creating the db's and tables along with the username and password
 
-mysql -uroot < /opt/student-app/dbscript/studentapp.sql
+sudo su -c "mysql -uroot < /opt/student-app/dbscript/studentapp.sql"
 
 #Modifying the managers context.xml file to access the managers application in tomcat
 
