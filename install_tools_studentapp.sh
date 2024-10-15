@@ -102,7 +102,7 @@ systemctl enable nginx
 
 # mariadb setup
 
-sudo yum install mariadb* -y
+sudo yum install mariadb105-server.x86_64 -y
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 
