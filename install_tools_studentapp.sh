@@ -77,7 +77,7 @@ echo "[Unit]
         User=devops
         Group=devops
 
-        Environment=JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.13.0.8-4.el8_5.x86_64
+        Environment=JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto.x86_64/bin/java
         Environment='JAVA_OPTS=-Djava.awt.headless=true'
         Environment=CATALINA_HOME=/opt/appserver/
         Environment=CATALINA_BASE=/opt/appserver/
