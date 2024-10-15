@@ -10,7 +10,7 @@ sudo systemctl stop firewalld
 
 #setting the hostname for the server
 
-sudo hostnamectl set-hostname appserver
+#sudo hostnamectl set-hostname appserver
 
 #Adding the user devops
 
@@ -63,8 +63,10 @@ tar -xvzf apache-tomcat-9.0.93.tar.gz
 rm -rf apache-tomcat-9.0.93.tar.gz
 mv apache-tomcat-9.0.93 appserver
 
+sudo chown -R devops:devops /opt/
 
-# configuring tomcat as a service
+
+# Configuring Tomcat as a service
 
 echo "[Unit]
         Description=Tomcat Server
