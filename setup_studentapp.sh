@@ -8,11 +8,11 @@ cd /opt/student-app/
 
 git init
 
-git clone https://gitlab.com/rns-app/student-app.git
+#git clone https://gitlab.com/rns-app/student-app.git
 
-git clone https://gitlab.com/rns-app/static-project.git
+#git clone https://gitlab.com/rns-app/static-project.git
 
-#git pull origin master
+git pull origin main
 
 #creating the db's and tables along with the username and password
 
@@ -38,7 +38,7 @@ sudo systemctl restart tomcat
 
 #Setting the java path to java1.8 to build the application
 
-echo 2 | sudo alternatives --config java
+echo 1 | sudo alternatives --config java
 
 #Building the application using Maven
 
@@ -46,7 +46,7 @@ sudo su - devops -c "cd /opt/student-app/ && mvn clean package"
 
 #Setting the java path to java1.11 as per the tomcat
 
-echo 1 | sudo alternatives --config java
+echo 2 | sudo alternatives --config java
 
 #Deploying the build artifact to the tomcat webapps folder
 
