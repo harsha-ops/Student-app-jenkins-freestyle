@@ -59,9 +59,9 @@ sudo su - devops -c "sudo ln -s /opt/maven/bin/mvn /usr/local/bin/mvn"
 # Tomcat Installation
 
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.96/bin/apache-tomcat-9.0.96.tar.gz
-tar -xvzf apache-tomcat-9.0.93.tar.gz
-rm -rf apache-tomcat-9.0.93.tar.gz
-mv apache-tomcat-9.0.93 appserver
+tar -xvzf aapache-tomcat-9.0.96.tar.gz
+rm -rf apache-tomcat-9.0.96.tar.gz
+mv apache-tomcat-9.0.96 appserver
 
 sudo chown -R devops:devops /opt/
 
